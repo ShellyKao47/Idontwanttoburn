@@ -15,7 +15,10 @@ public class Player : MonoBehaviour
     public Vector3 offset;
     [Header("判定地面半徑")]
     public float radius = 0.3f;
+    [Header("死掉畫面")]
+    public GameObject GameOver;
 
+    private SpriteRenderer Spr;
     private AudioSource Aud;
     private Rigidbody2D Rig;
     private Animator Ani;
@@ -26,7 +29,6 @@ public class Player : MonoBehaviour
     /// </summary>
     public float h;
 
-
     //在 Unity 內繪製圖示
     private void OnDrawGizmos()
     {
@@ -36,20 +38,21 @@ public class Player : MonoBehaviour
         Gizmos.DrawSphere(transform.position + offset, radius);
     }
 
-    public void Start()
-    {
-        Rig = GetComponent<Rigidbody2D>();
-        Ani = GetComponent<Animator>();
-        Aud = GetComponent<AudioSource>();
-    }
-
-    public void Update()
+    private void Update()
     {
         GetHorizontal();
         Move();
         Jumpz();
     }
 
+    private void Start()
+    {
+        //剛體欄位=取得元件<剛體>()
+        Rig = GetComponent<Rigidbody2D>();
+        Ani = GetComponent<Animator>();
+        Aud = GetComponent<AudioSource>();
+        Spr = GetComponent<SpriteRenderer>();
+    }
     /// <summary>
     /// 取得水平軸向
     /// </summary>
@@ -58,7 +61,6 @@ public class Player : MonoBehaviour
         //輸入.取得軸向("水平")
         h = Input.GetAxis("Horizontal");
     }
-
     /// <summary>
     /// 移動
     /// </summary>
@@ -79,9 +81,8 @@ public class Player : MonoBehaviour
             transform.localEulerAngles = new Vector3(0, 180, 0);
         }
         //設定跑步動畫 水平不等於0
-        Ani.SetBool("走路開關", h != 0);
+        Ani.SetBool("跑步開關", h != 0);
     }
-
     /// <summary>
     /// 跳躍
     /// </summary>
@@ -108,11 +109,19 @@ public class Player : MonoBehaviour
         {
             OnFloor = false;
         }
-
         //動畫控制器.設定浮點數
         Ani.SetFloat("跳躍", Rig.velocity.y);
         Ani.SetBool("是否在地面上", OnFloor);
 
     }
-
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    private void Dead()
+    {
+        GameOver.SetActive(true);
+        Rig.Sleep();
+        Ani.SetBool("死亡開關", true);
+        enabled = false;
+    }
 }
