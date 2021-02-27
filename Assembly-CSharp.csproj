@@ -63,7 +63,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\CameraControl2D.cs" />
+    <Compile Include="Assets\Script\CameraController2D.cs" />
+    <Compile Include="Assets\Script\CameraController2D1.cs" />
+    <Compile Include="Assets\Script\Jump.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <None Include="Assets\素材\freegui\png\README.txt" />
     <None Include="Assets\素材\SNsanafonmaru\SNsanafonmaru.txt" />
@@ -687,20 +689,7 @@
       <HintPath>C:/Shelly/Shelly_2D_HW_Idontwanttoburn/Idontwanttoburn/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Dependency.csproj">
-      <Project>{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}</Project>
-      <Name>Unity.2D.Animation.Samples.Dependency</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Runtime.csproj">
-      <Project>{BB96832E-5421-7E64-1FF4-36209BE2DECC}</Project>
-      <Name>Unity.2D.Animation.Samples.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Animation.Samples.Editor.csproj">
-      <Project>{8C426765-EBE7-882F-88A1-631EB9778A42}</Project>
-      <Name>Unity.2D.Animation.Samples.Editor</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

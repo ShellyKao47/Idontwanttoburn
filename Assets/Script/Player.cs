@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
         GetHorizontal();
         Move();
         Jumpz();
+        attack();
     }
 
     private void Start()
@@ -123,5 +124,17 @@ public class Player : MonoBehaviour
         Rig.Sleep();
         Ani.SetBool("死亡開關", true);
         enabled = false;
+    }
+
+    /// <summary>
+    /// 攻擊
+    /// </summary>
+    private void attack()
+    {
+        // 如果按下左鍵 (手機為觸控)
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Ani.SetTrigger("攻擊開關");
+        }
     }
 }

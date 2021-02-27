@@ -3,12 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{492EB71E-B386-97AD-54F0-011E643496A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Animation.Samples.Runtime", "Unity.2D.Animation.Samples.Runtime.csproj", "{BB96832E-5421-7E64-1FF4-36209BE2DECC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Animation.Samples.Dependency", "Unity.2D.Animation.Samples.Dependency.csproj", "{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.2D.Animation.Samples.Editor", "Unity.2D.Animation.Samples.Editor.csproj", "{8C426765-EBE7-882F-88A1-631EB9778A42}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,18 +13,6 @@ Global
 		{492EB71E-B386-97AD-54F0-011E643496A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{492EB71E-B386-97AD-54F0-011E643496A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{492EB71E-B386-97AD-54F0-011E643496A8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB96832E-5421-7E64-1FF4-36209BE2DECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB96832E-5421-7E64-1FF4-36209BE2DECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB96832E-5421-7E64-1FF4-36209BE2DECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB96832E-5421-7E64-1FF4-36209BE2DECC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D4CF12B4-BA5B-EEF0-14FC-E1BAE1C27716}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8C426765-EBE7-882F-88A1-631EB9778A42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8C426765-EBE7-882F-88A1-631EB9778A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8C426765-EBE7-882F-88A1-631EB9778A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8C426765-EBE7-882F-88A1-631EB9778A42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
