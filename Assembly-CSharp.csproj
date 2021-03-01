@@ -65,8 +65,12 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CameraController2D.cs" />
     <Compile Include="Assets\Script\CameraController2D1.cs" />
+    <Compile Include="Assets\Script\Dead.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Jump.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\ScenesController.cs" />
+    <Compile Include="Assets\Script\cherry.cs" />
     <None Include="Assets\素材\freegui\png\README.txt" />
     <None Include="Assets\素材\SNsanafonmaru\SNsanafonmaru.txt" />
     <None Include="Assets\素材\platformergraphics-candycaverns\license.txt" />

@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
     #region 角色基本設定
     [Header("移動速度"), Range(0, 100)]
     public float Speed = 10.5f;
-    [Header("跳躍高度"), Range(0, 500)]
+    [Header("跳躍高度"), Range(0, 1500)]
     public int Jump = 100;
     [Header("是否在地板上")]
     public bool OnFloor;
