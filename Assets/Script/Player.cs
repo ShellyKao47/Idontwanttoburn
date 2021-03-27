@@ -17,6 +17,19 @@ public class Player : MonoBehaviour
     public float radius = 0.3f;
     [Header("死掉畫面")]
     public GameObject GameOver;
+    [Header("死掉物件")]
+    public GameObject cherry;
+    [Header("玩家")]
+    public GameObject player;
+    [Header("玩家死亡")]
+    public GameObject playerdead;
+    [Header("血量")]
+    public float hp = 10;
+    [Header("結束畫面")]
+    public GameObject panelGameOver;
+    [Header("勝利畫面")]
+    public GameObject panelwin;
+
 
     private SpriteRenderer Spr;
     private AudioSource Aud;
@@ -44,6 +57,7 @@ public class Player : MonoBehaviour
         Move();
         Jumpz();
         attack();
+        
     }
 
     private void Start()
@@ -115,16 +129,6 @@ public class Player : MonoBehaviour
         Ani.SetBool("是否在地面上", OnFloor);
 
     }
-    /// <summary>
-    /// 死亡
-    /// </summary>
-    private void Dead()
-    {
-        GameOver.SetActive(true);
-        Rig.Sleep();
-        Ani.SetBool("死亡開關", true);
-        enabled = false;
-    }
 
     /// <summary>
     /// 攻擊
@@ -136,5 +140,35 @@ public class Player : MonoBehaviour
         {
             Ani.SetTrigger("攻擊開關");
         }
+    }
+
+    /// <summary>
+    /// 死亡
+    /// </summary>
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "碰撞器")
+        {
+            hp = -1;
+            panelGameOver.SetActive(true);
+            player.SetActive(false);
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "勝利")
+        {
+           
+            panelwin.SetActive(true);
+            enabled = false;
+        }
+    }
+
+
+    public void Damage(float getDamge)
+    {
+        hp -= getDamge;                 // 遞減
+        if (hp <= 0) player.SetActive(false);    // 如果 血量 <= 0 就 死亡
     }
 }

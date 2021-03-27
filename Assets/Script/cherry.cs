@@ -15,7 +15,6 @@ public class cherry : MonoBehaviour
     {
         if (collision.name == "玩家")
         {
-            print("ok");
             Ani.SetTrigger("掉落");
         }
     } 
