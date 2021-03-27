@@ -82,39 +82,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 590}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11554}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 11792}
     - Class: 114
-      Script: {instanceID: 12016}
+      Script: {instanceID: 12094}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 12640}
+      Script: {instanceID: 12718}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13358}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13826}
     - Class: 114
-      Script: {instanceID: 14122}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14250}
+      Script: {instanceID: 14202}
     - Class: 114
-      Script: {instanceID: 14364}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14444}
     - Class: 114
-      Script: {instanceID: 14408}
+      Script: {instanceID: 14446}
     - Class: 114
-      Script: {instanceID: 40324}
+      Script: {instanceID: 14488}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,21 +177,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 590}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11554}
+      Script: {instanceID: 11632}
     - Class: 114
-      Script: {instanceID: 11608}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13826}
     - Class: 114
-      Script: {instanceID: 14250}
+      Script: {instanceID: 14330}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 14446}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -627,6 +627,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 2122ad77b35f7f0129bab21633be2a24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -751,14 +757,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 2122ad77b35f7f0129bab21633be2a24
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundManager
   platform: 20
   scenePathNames:
   - "Assets/Scenes/\u958B\u59CB\u756B\u9762.unity"
   - "Assets/Scenes/\u904A\u6232\u5834\u666F.unity"
-  playerPath: C:/Shelly/Shelly_2D_HW_Idontwanttoburn/Web
+  playerPath: C:/Shelly/Shelly_2D_Marshmallow/Web
